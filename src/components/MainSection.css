@@ -67,6 +67,7 @@ background-image: url('/src/assets/Hero-background.png');
 background-size: 100%;
 display: grid;
 grid-template-columns: 1fr 1fr;
+background-repeat:no-repeat;
 }
 
 .content>div{
