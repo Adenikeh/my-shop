@@ -1,66 +1,65 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 2rem;
-    background-color: white;
-    color:black;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo {
-    font-size:larger;
-    font-weight: bolder;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  
-  .nav {
-    flex-grow: 1;
-    text-align: center;
-  }
-  
-  .nav-list {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav-item {
-    margin: 0 1rem;
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s;
-  }
-  
-  .nav-item:hover {
-    color: black;
-  }
-  
-  .actions {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-input {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    margin-right: 1rem;
-    color:black;
-    background-color: #ccc;
-    outline: none;
-  }
-  
-  .icon {
-    margin-left: 1rem;
-    cursor: pointer;
-    color: gray;
-    transition: color 0.3s;
-  }
-  
-  .icon:hover {
-    color: black;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2rem;
+  background-color: white;
+  color:black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size:larger;
+  font-weight: bolder;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: black;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-right: 1rem;
+  color:black;
+  background-color: #ccc;
+  outline: none;
+}
+
+.icon {
+  margin-left: 1rem;
+  cursor: pointer;
+  color: gray;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: black;
+}

@@ -1,17 +1,17 @@
 .footer {
-    background-color: black;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .brands {
-    display: flex;
-    justify-content: center;
-    gap: 6rem;
-    padding:1.0rem;
-    font-size: large;
-  }
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding:1.0rem;
+  font-size: large;
+}
 
   
   

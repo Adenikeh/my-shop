@@ -1,93 +1,97 @@
 .main-section {
-    text-align: left;
-    background-color: #f7f7f7;
-    font-weight: bolder;
-    position: relative;
-    min-height: fit-content;
-  }
+  text-align: left;
+  background-color: #f7f7f7;
+  font-weight: bolder;
+  position: relative;
+  min-height: fit-content;
+}
+
+.main-title {
+  font-size: 3.0rem;
+  text-align: left;
+  justify-content: left;
+  font-weight:bolder;
   
-  .main-title {
-    font-size: 2.5rem;
-    text-align: left;
-    justify-content: left;
-    font-weight:bolder;
-    
-    color:black;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+  color:black;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-description {
+  margin-bottom: 1.5rem;
+  color:#333;
+  font-size: small;
   
-  .main-description {
-    margin-bottom: 2.5rem;
-    color:black;
-    
-  }
+}
+
+.shop-button {
+  background-color: black;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.shop-button:hover {
+  background-color:#333;
   
-  .shop-button {
-    background-color: black;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+}
+
+.stats {
+  display: flex;
+  justify-content: left;
+  margin-top: 3rem;
+}
+
+.stat {
+  text-align: center;
+  margin: 0 2rem;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.0rem;
+  font-weight: bold;
+  color:black;
   
-  .shop-button:hover {
-    background-color: #333;
-  }
-  
-  .stats {
-    display: flex;
-    justify-content: left;
-    margin-top: 3rem;
-  }
-  
-  .stat {
-    text-align: center;
-    margin: 0 2rem;
-  }
-  
-  .stat-number {
-    display: block;
-    font-size: 2.5rem;
-    font-weight: bolder;
-    color:black;
-    
-  }
-  
-  .stat-label {
-    margin-top: 1.5rem;
-    color:black;
-  }
+}
+
+.stat-label {
+  margin-top: 1.5rem;
+  color:black;
+}
 
 .content{
-  background-image: url('/src/assets/Hero-background.png');
-  background-size: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+background-image: url('/src/assets/Hero-background.png');
+background-size: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr;
 }
 
 .content>div{
-  padding: 2rem;
+padding: 2rem;
 }
 
 
 .star{
-  height: 90%;
-  position: relative;
+height: 90%;
+position: relative;
 }
 
 .small-star{
-  position: absolute;
-  left: 20px;
-  bottom: 30%;
+position: absolute;
+left: 20px;
+bottom: 30%;
 }
 
 .big-star{
-  position: absolute;
-  right: 30px;
-  top: 10%;
+position: absolute;
+right: 30px;
+top: 10%;
 }
+
+
 
 
   
