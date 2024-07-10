@@ -1,8 +1,9 @@
 .main-section {
     text-align: left;
-    padding: 4rem 1rem;
     background-color: #f7f7f7;
     font-weight: bolder;
+    position: relative;
+    min-height: fit-content;
   }
   
   .main-title {
@@ -60,14 +61,34 @@
   }
 
 .content{
-    width: 200%; 
+  background-image: url('/src/assets/Hero-background.png');
+  background-size: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-img {
-    float: right;
-    margin-left: 30px; 
-    height: 450px;
+.content>div{
+  padding: 2rem;
 }
+
+
+.star{
+  height: 90%;
+  position: relative;
+}
+
+.small-star{
+  position: absolute;
+  left: 20px;
+  bottom: 30%;
+}
+
+.big-star{
+  position: absolute;
+  right: 30px;
+  top: 10%;
+}
+
 
   
  
