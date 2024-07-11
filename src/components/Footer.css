@@ -13,5 +13,14 @@
   font-size: large;
 }
 
+
+@media (max-width: 768px) {
+  .brands{
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+}
+
   
   

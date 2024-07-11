@@ -10,17 +10,17 @@
   font-size: 3.0rem;
   text-align: left;
   justify-content: left;
-  font-weight:bolder;
-  
-  color:black;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .main-description {
   margin-bottom: 1.5rem;
-  color:#333;
+  color: #333;
   font-size: small;
-  
+
 }
 
 .shop-button {
@@ -34,8 +34,8 @@
 }
 
 .shop-button:hover {
-  background-color:#333;
-  
+  background-color: #333;
+
 }
 
 .stats {
@@ -53,47 +53,112 @@
   display: block;
   font-size: 2.0rem;
   font-weight: bold;
-  color:black;
-  
+  color: black;
+
 }
 
 .stat-label {
   margin-top: 1.5rem;
-  color:black;
+  color: black;
 }
 
-.content{
-background-image: url('/src/assets/Hero-background.png');
-background-size: 100%;
-display: grid;
-grid-template-columns: 1fr 1fr;
-background-repeat:no-repeat;
+.content {
+  background-image: url('/src/assets/Hero-background.png');
+  background-size: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-repeat: no-repeat;
 }
 
-.content>div{
-padding: 2rem;
+.content .inner-content {
+  padding: 2rem;
 }
 
-
-.star{
-height: 90%;
-position: relative;
-}
-
-.small-star{
-position: absolute;
-left: 20px;
-bottom: 30%;
-}
-
-.big-star{
-position: absolute;
-right: 30px;
-top: 10%;
+.star .back-image {
+  display: none;
 }
 
 
+.star {
+  height: 90%;
+  position: relative;
+}
+
+.small-star {
+  position: absolute;
+  left: 20px;
+  bottom: 30%;
+}
+
+.big-star {
+  position: absolute;
+  right: 30px;
+  top: 10%;
+}
 
 
+@media (max-width: 768px) {
+
+  .content {
+    grid-template-columns: 1fr;
+    background-image: none;
+  }
+
+  .content>div,
+  .content h1,
+  .content p {
+    text-align: center;
+  }
+
+  .content button {
+    margin-inline: auto;
+  }
+
+  .star{
+    width: 100%;
+    height: fit-content;
+  }
+  .star .back-image {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+
+  }
+
+  .small-star {
+    position: block;
+    left: 20px;
+    bottom: 30%;
+  }
   
- 
+  .big-star {
+    position: absolute;
+    right: 30px;
+    top: 10%;
+  }
+
+  .star{
+    padding: 0.4rem;
+  }
+
+  .stats {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .inner-content{
+    padding: 4rem 1.5rem;
+  }
+
+  .main-title{
+    margin-top: 30px;
+  }
+
+  .main-description{
+    margin-block: 30px;
+    width: 70%;
+    margin-inline: auto;
+  }
+
+
+}

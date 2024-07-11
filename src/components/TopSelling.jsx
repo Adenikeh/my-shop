@@ -1,6 +1,9 @@
 // src/components/TopSelling.js
 import React from 'react';
-import './ProductList.css'; // Assuming you have CSS for styling
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import './ProductList.css'; // We'll create this file for custom styling
 
 const TopSelling = () => {
   const products = [
@@ -10,10 +13,36 @@ const TopSelling = () => {
     { id: 4, name: 'Faded Skinny Jeans', price: 210, rating: 4.0, image: 'src/assets/jean.png' },
   ];
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
   return (
     <div className="product-section">
       <h2>Top Selling</h2>
-      <div className="product-list">
+      <Slider {...settings}>
         {products.map(product => (
           <div key={product.id} className="product-card">
             <img src={product.image} alt={product.name} />
@@ -24,7 +53,7 @@ const TopSelling = () => {
             </div>
           </div>
         ))}
-      </div>
+      </Slider>
     </div>
   );
 };

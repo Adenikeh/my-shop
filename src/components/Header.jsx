@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="header">
       <div className="logo">SHOP.CO</div>
-      <nav className="nav">
+      <div className={`menu-icon ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
         <ul className="nav-list">
           <li><a href="#" className="nav-item">Shop</a></li>
           <li><a href="#" className="nav-item">On Sale</a></li>

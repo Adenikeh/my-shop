@@ -1,51 +1,74 @@
-
+/* src/components/TopSelling.css */
 .product-section {
-    
-    font-weight: bolder;
-    color: black;
-    margin:0;
-    background-color: white;
-    padding: auto;
-  }
-  
-  .product-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .product-card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    width: 200px;
-    text-align: center;
-    background-color: white;
+  font-weight: bolder;
+  color: black;
+  margin: 0;
+  background-color: white;
+  padding: 20px 5%;
+}
 
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.product-info {
+  margin-top: 15px;
+  color: black;
+  font-weight: bolder;
+  background-color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.product-info p {
+  margin: 8px 0;
+}
+
+.discount {
+  text-decoration: line-through;
+  color: red;
+}
+
+/* Custom styles for react-slick */
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .product-section {
+    padding: 15px 3%;
   }
-  
-  .product-card img {
-    max-width: 100%;
-    height: auto;
-    
+}
+
+@media (max-width: 480px) {
+  .product-section {
+    padding: 10px 2%;
   }
-  
+
   .product-info {
-    margin-top: 10px;
-    color:black;
-    font-weight:bolder;
-    background-color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-size: 0.9em;
   }
-  
-  .product-info p {
-    margin: 5px 0;
-  }
-  
-  .discount {
-    text-decoration: line-through;
-    color: red;
-  }
-
-  
+}
