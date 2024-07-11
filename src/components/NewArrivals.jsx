@@ -3,7 +3,12 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './ProductList.css'; // We'll create this file for custom styling
+import './ProductList.css'; 
+import blacktop from '../assets/blacktop.png';
+import bluejeans from '../assets/bluejeans.png';
+import shirtformen from '../assets/shirtformen.png';
+import blackandorangetop from '../assets/blackandorangetop.png';
+
 
 const NewArrivals = () => {
   const products = [

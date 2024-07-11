@@ -3,7 +3,11 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './ProductList.css'; // We'll create this file for custom styling
+import './ProductList.css';
+import VerticalStripedShirt from '../assets/strippedshirt.png';
+import CourageGraphicTshirt from '../assets/orangetop.png';
+import LooseFitBermudaShorts from '../assets/jeanshorts.png';
+import FadedSkinnyJeans from '../assets/jean.png';
 
 const TopSelling = () => {
   const products = [
